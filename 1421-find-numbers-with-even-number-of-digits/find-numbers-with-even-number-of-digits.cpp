@@ -6,12 +6,12 @@ public:
         
         for(int i=0;i<n;i++){
              int count=0;
-            int n= nums[i];
-            while(n>0){
+            int num= nums[i];
+            while(num>0){
                
-                int r = n%10;
+                int r = num%10;
                 count++;
-                n=n/10;
+                num=num/10;
             }
             if(count%2==0){
                 answer++;
