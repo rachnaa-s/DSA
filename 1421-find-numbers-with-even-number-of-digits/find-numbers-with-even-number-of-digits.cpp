@@ -9,7 +9,7 @@ public:
             int num= nums[i];
             while(num>0){
                
-                int r = num%10;
+                
                 count++;
                 num=num/10;
             }
