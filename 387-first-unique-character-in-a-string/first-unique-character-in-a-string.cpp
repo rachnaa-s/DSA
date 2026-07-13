@@ -3,8 +3,8 @@ public:
     int firstUniqChar(string s) {
         unordered_map<char, int>mp;
         int n= s.size();
-        if(s.size()==0) return -1;
-        if(s.size()==1) return 0;
+        if(n==0) return -1;
+        if(n==1) return 0;
         for(int i=0;i<n;i++){
             mp[s[i]]++;
             
