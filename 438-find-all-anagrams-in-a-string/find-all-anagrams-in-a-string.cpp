@@ -5,7 +5,8 @@ public:
         vector<int>index1(26,0);
         vector<int>ans;
         int k=p.size();
-        if(p.size()>s.size()){
+        int n=s.size();
+        if(k>n){
             return {};
         }
         for(char c:p){
@@ -21,7 +22,7 @@ public:
                 
             }
 
-        for(int right=k;right<s.size();right++){
+        for(int right=k;right<n;right++){
             index1[s[right-k]-'a']--;
             index1[s[right]-'a']++;
             if(index==index1){
